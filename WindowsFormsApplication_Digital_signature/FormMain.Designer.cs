@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication_Digital_signature
 {
-    partial class Form_Main
+    partial class Form_Main_win
     {
         /// <summary>
         /// Required designer variable.
@@ -243,14 +243,14 @@
             this.label_decrypt_text.TabIndex = 1;
             this.label_decrypt_text.Text = "Wait.....";
             // 
-            // Form_Main
+            // Form_Main_win
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(701, 342);
             this.Controls.Add(this.groupBox_encryption);
             this.Controls.Add(this.groupBox_signature);
-            this.Name = "Form_Main";
+            this.Name = "Form_Main_win";
             this.Text = "Signature And Encryption";
             this.groupBox_signature.ResumeLayout(false);
             this.groupBox_encryption.ResumeLayout(false);

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication_Digital_signature
 {
-    public partial class Form_Main : Form
+    public partial class Form_Main_win : Form
     {
-        public Form_Main()
+        public Form_Main_win()
         {
             InitializeComponent();
         }
