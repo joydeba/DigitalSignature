@@ -104,7 +104,8 @@
             // 
             // panel__sig_bob
             // 
-            this.panel__sig_bob.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel__sig_bob.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel__sig_bob.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel__sig_bob.Controls.Add(this.richTextBox_sig_hash_value);
@@ -228,7 +229,8 @@
             // 
             // richTextBox_encrypted_text
             // 
-            this.richTextBox_encrypted_text.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.richTextBox_encrypted_text.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox_encrypted_text.Location = new System.Drawing.Point(131, 23);
             this.richTextBox_encrypted_text.Name = "richTextBox_encrypted_text";
