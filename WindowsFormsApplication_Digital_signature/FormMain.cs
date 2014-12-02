@@ -31,7 +31,10 @@ namespace WindowsFormsApplication_Digital_signature
         private void button_gen_encryption_Click(object sender, EventArgs e)
         {
             if (textBox_plaintext.Text == "")
+            {
                 MessageBox.Show("Please enter a string to sign");
+
+            }
             else
             {
                 byte[] toEncrypt = Encoding.Unicode.GetBytes(textBox_plaintext.Text);
@@ -43,10 +46,10 @@ namespace WindowsFormsApplication_Digital_signature
         private void button_sig_verify_Click(object sender, EventArgs e)
         {
             if (myReceiver.VerifyHash(mySender.PublicParameters(), encrypted, signature))
-                MessageBox.Show("Signature Valid");
+                label_verify_status.Text = "Signature Valid";
 
             else
-                MessageBox.Show("Invalid Signature");
+                label_verify_status.Text = "Invalid Signature";
         }
 
         private void button_decryped_text_Click(object sender, EventArgs e)
