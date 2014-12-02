@@ -31,5 +31,15 @@ namespace WindowsFormsApplication_Digital_signature
             return rsaCSP.Encrypt(toEncrypt, false);
         }
 
+        public byte[] HashAndSign(byte[] encrypted)
+        {
+            RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+            SHA1Managed hash = new SHA1Managed();
+            byte[] hashedData;
+            rsaCSP.ImportParameters(rsaPrivateParams);
+            hashedData = hash.ComputeHash(encrypted);
+            return rsaCSP.SignHash(hashedData, CryptoConfig.MapNameToOID("SHA1"));
+        }
+
     }
 }
