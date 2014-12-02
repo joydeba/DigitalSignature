@@ -24,8 +24,13 @@ namespace WindowsFormsApplication_Digital_signature
 
         private void button_gen_hashvalue_Click(object sender, EventArgs e)
         {
-            signature = mySender.HashAndSign(encrypted);
-            richTextBox_sig_hash_value.Text = Convert.ToBase64String(encrypted);
+            if (richTextBox_encrypted_text.Text == "")
+                MessageBox.Show("First click on encrypt button");
+            else
+            {
+                signature = mySender.HashAndSign(encrypted);
+                richTextBox_sig_hash_value.Text = Convert.ToBase64String(encrypted);
+            }
         }
 
         private void button_gen_encryption_Click(object sender, EventArgs e)
