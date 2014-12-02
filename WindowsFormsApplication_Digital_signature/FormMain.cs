@@ -17,6 +17,11 @@ namespace WindowsFormsApplication_Digital_signature
             InitializeComponent();
         }
 
+        Alice myReceiver = new Alice();
+        Bob mySender = new Bob();
+        byte[] encrypted;
+        byte[] signature;
+
         private void button_gen_hashvalue_Click(object sender, EventArgs e)
         {
 
@@ -26,6 +31,12 @@ namespace WindowsFormsApplication_Digital_signature
         {
             if (textBox_plaintext.Text == "")
                 MessageBox.Show("Please enter a string to sign");
+            else
+            {
+                byte[] toEncrypt = Encoding.Unicode.GetBytes(textBox_plaintext.Text);
+                encrypted = mySender.EncryptData(myReceiver.PublicParameters(), toEncrypt);
+                richTextBox_encrypted_text.Text = Convert.ToBase64String(encrypted);
+            }
         }
     }
 }
