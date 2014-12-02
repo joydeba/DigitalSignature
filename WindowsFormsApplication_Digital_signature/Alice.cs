@@ -25,19 +25,26 @@ namespace WindowsFormsApplication_Digital_signature
 
         public bool VerifyHash(RSAParameters rsaParams, byte[] signedData, byte[] signature)
         {
-            try
-            {
-                RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
-                SHA1Managed hash = new SHA1Managed();
-                Byte[] hashedData;
-                rsaCSP.ImportParameters(rsaParams);
-                hashedData = hash.ComputeHash(signedData);
-                return rsaCSP.VerifyHash(hashedData, CryptoConfig.MapNameToOID("SHA1"), signature);
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+            SHA1Managed hash = new SHA1Managed();
+            Byte[] hashedData;
+            rsaCSP.ImportParameters(rsaParams);
+            hashedData = hash.ComputeHash(signedData);
+            return rsaCSP.VerifyHash(hashedData, CryptoConfig.MapNameToOID("SHA1"), signature);
+
         }
+
+        public string DecryptData(byte[] encrypted)
+        {
+            byte[] fromEncrypt;
+            string roundTrip;
+            RSACryptoServiceProvider rsaCSP=new RSACryptoServiceProvider();
+            rsaCSP.ImportParameters(rsaPrivateParams);
+            fromEncrypt = rsaCSP.Decrypt(encrypted, false);
+            roundTrip = Encoding.Unicode.GetString(fromEncrypt);
+            return roundTrip;
+        }
+
+    
     }
 }

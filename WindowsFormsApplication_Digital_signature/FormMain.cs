@@ -48,5 +48,10 @@ namespace WindowsFormsApplication_Digital_signature
             else
                 MessageBox.Show("Invalid Signature");
         }
+
+        private void button_decryped_text_Click(object sender, EventArgs e)
+        {
+            label_decrypt_text.Text = myReceiver.DecryptData(encrypted);
+        }
     }
 }

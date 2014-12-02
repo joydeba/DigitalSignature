@@ -212,6 +212,7 @@
             this.button_decryped_text.TabIndex = 0;
             this.button_decryped_text.Text = "Decrypt text using alice\'s private key";
             this.button_decryped_text.UseVisualStyleBackColor = true;
+            this.button_decryped_text.Click += new System.EventHandler(this.button_decryped_text_Click);
             // 
             // panel__enc_bob
             // 
