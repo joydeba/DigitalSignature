@@ -15,5 +15,15 @@ namespace WindowsFormsApplication_Digital_signature
         {
             InitializeComponent();
         }
+
+        private void button_gen_hashvalue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_gen_encryption_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
