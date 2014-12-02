@@ -22,5 +22,22 @@ namespace WindowsFormsApplication_Digital_signature
         {
             return rsaPubParams;
         }
+
+        public bool VerifyHash(RSAParameters rsaParams, byte[] signedData, byte[] signature)
+        {
+            try
+            {
+                RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+                SHA1Managed hash = new SHA1Managed();
+                Byte[] hashedData;
+                rsaCSP.ImportParameters(rsaParams);
+                hashedData = hash.ComputeHash(signedData);
+                return rsaCSP.VerifyHash(hashedData, CryptoConfig.MapNameToOID("SHA1"), signature);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }

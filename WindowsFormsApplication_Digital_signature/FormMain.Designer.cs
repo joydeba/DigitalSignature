@@ -100,6 +100,7 @@
             this.button_sig_verify.TabIndex = 0;
             this.button_sig_verify.Text = "Verify signature using bob\'s public key";
             this.button_sig_verify.UseVisualStyleBackColor = true;
+            this.button_sig_verify.Click += new System.EventHandler(this.button_sig_verify_Click);
             // 
             // panel__sig_bob
             // 
@@ -148,6 +149,7 @@
             this.textBox_plaintext.Name = "textBox_plaintext";
             this.textBox_plaintext.Size = new System.Drawing.Size(129, 20);
             this.textBox_plaintext.TabIndex = 1;
+            this.textBox_plaintext.Text = "hello";
             // 
             // label_plain_text
             // 

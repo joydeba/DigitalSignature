@@ -27,7 +27,7 @@ namespace WindowsFormsApplication_Digital_signature
             signature = mySender.HashAndSign(encrypted);
             richTextBox_sig_hash_value.Text = Convert.ToBase64String(encrypted);
         }
-    
+
         private void button_gen_encryption_Click(object sender, EventArgs e)
         {
             if (textBox_plaintext.Text == "")
@@ -38,6 +38,15 @@ namespace WindowsFormsApplication_Digital_signature
                 encrypted = mySender.EncryptData(myReceiver.PublicParameters(), toEncrypt);
                 richTextBox_encrypted_text.Text = Convert.ToBase64String(encrypted);
             }
+        }
+
+        private void button_sig_verify_Click(object sender, EventArgs e)
+        {
+            if (myReceiver.VerifyHash(mySender.PublicParameters(), encrypted, signature))
+                MessageBox.Show("Signature Valid");
+
+            else
+                MessageBox.Show("Invalid Signature");
         }
     }
 }
