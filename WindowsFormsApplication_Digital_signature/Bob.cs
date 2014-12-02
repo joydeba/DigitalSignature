@@ -31,5 +31,5 @@ namespace WindowsFormsApplication_Digital_signature
             return rsaCSP.Encrypt(toEncrypt, false);
         }
 
-            }
+    }
 }
