@@ -32,6 +32,132 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CryptoBlackbox">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\CryptoBlackbox.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.ASiC">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.ASiC.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.Cloud">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.Cloud.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.DAVClient">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.DAVClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.DAVCommon">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.DAVCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.DAVServer">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.DAVServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.DC">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.DC.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.EDI">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.EDI.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.FTPS">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.FTPS.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.FTPSServer">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.FTPSServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.HTTP">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.HTTP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.HTTPCommon">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.HTTPCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.HTTPServer">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.HTTPServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.LDAP">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.LDAP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.Mail">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.MIME">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.MIME.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.Office">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PDF">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PGP">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PGP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PGPLDAP">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PGPLDAP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PGPMIME">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PGPMIME.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PGPSSH">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PGPSSH.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PGPTLS">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PGPTLS.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PKI">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PKI.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PKIPDF">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PKIPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.PKISSH">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.PKISSH.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SFTP">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SFTP.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SFTPCommon">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SFTPCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SFTPServer">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SFTPServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SMIME">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SMIME.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SOAPClient">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SOAPClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SolFS">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SolFS.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSHClient">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SSHClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSHCommon">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SSHCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSHServer">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SSHServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSLClient">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SSLClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSLCommon">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SSLCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.SSLServer">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.SSLServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.XML">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.XMLSecurity">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.XMLSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureBlackbox.ZIP">
+      <HintPath>..\packages\SecureBlackbox.12.0.263\lib\net20\SecureBlackbox.ZIP.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,7 +179,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XAdES.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +191,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +201,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="changes.txt" />
+    <Content Include="LicenseKey.txt" />
+    <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
