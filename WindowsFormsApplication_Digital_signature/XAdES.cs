@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
+using SBXMLSig;
+using SBXMLAdESIntf;
+using SBXMLSec;
+using SBXMLTransform;
+
 
 namespace WindowsFormsApplication_Digital_signature
 {
