@@ -7,6 +7,7 @@ using SBXMLSig;
 using SBXMLAdESIntf;
 using SBXMLSec;
 using SBXMLTransform;
+using SBXMLCore;
 
 
 namespace WindowsFormsApplication_Digital_signature
@@ -27,9 +28,10 @@ namespace WindowsFormsApplication_Digital_signature
             {
                 // adding a references. For example, adding a reference for a document element.
                 TElXMLReference Ref = new TElXMLReference();
+                TElXMLDOMDocument Doc = new TElXMLDOMDocument();
                 Ref.TransformChain.Add(new TElXMLEnvelopedSignatureTransform());
                 Ref.URI = "";
-                Ref.URINode = XMLDocument.DocumentElement;
+                Ref.URINode = Doc.DocumentElement;
                 Signer.References.Add(Ref);
 
                 // Setup Signer options. 
@@ -55,7 +57,7 @@ namespace WindowsFormsApplication_Digital_signature
                 Signer.GenerateSignature();
 
                 // Selecting a target node for the signature
-                TElXMLDOMNode SigNode = XMLDocument.DocumentElement;
+                TElXMLDOMNode SigNode = Doc.DocumentElement;
                 // Signing and saving signature
                 Signer.Save(ref SigNode);
 
