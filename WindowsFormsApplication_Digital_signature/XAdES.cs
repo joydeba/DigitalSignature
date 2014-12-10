@@ -71,5 +71,7 @@ namespace WindowsFormsApplication_Digital_signature
                 XAdESSigner.Dispose();
             }
         }
+
+        public TElXMLKeyInfoData X509Data { get; set; }
     }
 }
